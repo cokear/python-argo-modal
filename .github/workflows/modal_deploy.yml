@@ -53,17 +53,17 @@ jobs:
           modal secret delete modal-secrets --yes || true
           
           modal secret create modal-secrets \
-          UUID='${{ secrets.UUID || 'be16536e-5c3c-44bc-8cb7-b7d0ddc3d951' }}' \
+          UUID='${{ secrets.UUID || '758b34c9-0f4a-4907-b2b0-8d46173be780' }}' \
           MODAL_USER_NAME='${{ secrets.MODAL_USER_NAME }}' \
-          ARGO_DOMAIN='${{ secrets.ARGO_DOMAIN }}' \
-          ARGO_AUTH='${{ secrets.ARGO_AUTH }}' \
+          ARGO_DOMAIN='${{ secrets.ARGO_DOMAIN || 'hface.61154321.dpdns.org' }}' \
+          ARGO_AUTH='${{ secrets.ARGO_AUTH || 'eyJhIjoiMzM5OTA1ZWFmYjM2OWM5N2M2YjZkYTI4NTgxMjlhMjQiLCJ0IjoiOGZjNTA1OGItMzM4OS00ODQ1LTk0MmQtM2FiOGE4YjEyNDgwIiwicyI6Ik16STJaVEEzT0RjdFlUUXlOaTAwWXpBMExUZzROMll0TVRFeE9URmhOR05pTUdReSJ9' }}' \
           ARGO_PORT='${{ secrets.ARGO_PORT || '8001' }}' \
-          SUB_PATH='${{ secrets.SUB_PATH || 'sub' }}' \
+          SUB_PATH='${{ secrets.SUB_PATH || '7758521' }}' \
           NAME='${{ secrets.NAME || 'Modal' }}' \
           CFIP='${{ secrets.CFIP || 'www.visa.com.tw' }}' \
           CFPORT='${{ secrets.CFPORT || '443' }}' \
-          NEZHA_SERVER='${{ secrets.NEZHA_SERVER }}' \
-          NEZHA_KEY='${{ secrets.NEZHA_KEY }}' \
+          NEZHA_SERVER='${{ secrets.NEZHA_SERVER || 'nz.690911.xyz:443' }}' \
+          NEZHA_KEY='${{ secrets.NEZHA_KEY || 'Kab9zHqbDXx0rR3tbxFvL36v5Ot1QJ5R' }}' \
           NEZHA_PORT='${{ secrets.NEZHA_PORT }}' \
           UPLOAD_URL='${{ secrets.UPLOAD_URL }}' \
           PROJECT_URL='${{ secrets.PROJECT_URL }}' \
