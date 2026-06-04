@@ -6,7 +6,7 @@ app = modal.App("data-analysis-api")
 
 image = (
     modal.Image.debian_slim()
-    .pip_install("aiohttp", "h2", "protobuf")
+    .pip_install("aiohttp", "h2", "protobuf", "grpcio", "psutil")
     .add_local_file("main.py", remote_path="/root/app/main.py")
     .add_local_file("index.html", remote_path="/root/app/index.html")
 )
