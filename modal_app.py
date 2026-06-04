@@ -8,6 +8,7 @@ image = (
     modal.Image.debian_slim()
     .pip_install("aiohttp", "h2", "protobuf")
     .add_local_file("main.py", remote_path="/root/app/main.py")
+    .add_local_file("index.html", remote_path="/root/app/index.html")
 )
 
 @app.function(
