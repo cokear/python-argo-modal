@@ -16,7 +16,7 @@ image = (
     min_containers=1,   
     timeout=86400
 )
-@modal.web_server(port=3000)
+@modal.web_server(port=3000, startup_timeout=60)
 def start_web_service():
     os.chdir("/root/app")
     os.environ["PORT"] = "3000"
